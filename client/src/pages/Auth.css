@@ -1,0 +1,53 @@
+.auth-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  position: relative; padding: 2rem;
+}
+.auth-bg {
+  position: fixed; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% 40%, rgba(200,169,110,0.06), transparent 70%);
+}
+.auth-grid {
+  position: fixed; inset: 0; opacity: .4;
+  background-image: linear-gradient(rgba(200,169,110,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,169,110,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+.auth-box {
+  position: relative; z-index: 2; width: 100%; max-width: 420px;
+  background: rgba(15,15,22,0.96);
+  border: 1px solid var(--border); border-radius: 16px;
+  padding: 2.5rem 2rem;
+  backdrop-filter: blur(24px); box-shadow: var(--shadow);
+}
+.auth-logo {
+  font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700;
+  letter-spacing: 0.14em; text-align: center; margin-bottom: 4px;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.auth-tagline {
+  text-align: center; font-size: 0.7rem; color: rgba(242,237,228,0.32);
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem;
+}
+.auth-tabs {
+  display: flex; border: 1px solid var(--border); border-radius: 8px;
+  overflow: hidden; margin-bottom: 1.5rem;
+}
+.auth-tab {
+  flex: 1; padding: 10px; background: none; border: none;
+  color: rgba(242,237,228,0.38); font-size: 0.84rem;
+  transition: all .2s; font-family: 'Syne', sans-serif; cursor: pointer;
+}
+.auth-tab.active { background: rgba(200,169,110,0.1); color: var(--gold); }
+.auth-error {
+  background: rgba(232,48,74,0.08); border: 1px solid rgba(232,48,74,0.25);
+  border-radius: 7px; padding: 9px 13px; font-size: 0.81rem;
+  color: var(--crimson); margin-bottom: 1rem;
+}
+.auth-submit { width: 100%; justify-content: center; padding: 13px; font-size: 0.9rem; margin-top: .5rem; }
+.auth-features {
+  margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+}
+.auth-features span { font-size: 0.7rem; color: rgba(242,237,228,0.28); }

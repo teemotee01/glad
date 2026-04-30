@@ -1,0 +1,38 @@
+.rest-page { min-height: 100vh; }
+
+.rest-hero {
+  min-height: 70vh; display: flex; align-items: center;
+  padding: 4rem; position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 70% 60% at 40% 55%, rgba(180,80,20,0.09), transparent 70%);
+}
+.rest-hero-bg {
+  position: absolute; inset: 0; opacity: .4;
+  background-image: linear-gradient(rgba(180,80,20,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180,80,20,0.05) 1px, transparent 1px);
+  background-size: 55px 55px;
+  mask-image: radial-gradient(ellipse at 35% 50%, black 20%, transparent 65%);
+}
+.rest-hero-content { position: relative; z-index: 2; max-width: 580px; }
+.rest-hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(180,80,20,0.08); border: 1px solid rgba(200,169,110,0.2);
+  border-radius: 20px; padding: 5px 16px;
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 2rem;
+}
+.rest-hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 5rem); font-weight: 300; line-height: 1.0; margin-bottom: 1.5rem;
+}
+.rest-hero-title em { font-style: italic; font-weight: 600; color: var(--gold); }
+.rest-hero-desc {
+  font-size: 1rem; color: rgba(242,237,228,0.5); line-height: 1.75;
+  margin-bottom: 2.5rem; font-weight: 300; max-width: 460px;
+}
+.scene-desc { font-size: 0.88rem; color: rgba(242,237,228,0.42); margin-top: .5rem; max-width: 480px; }
+.rest-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 1.5rem; align-items: start; }
+
+@media (max-width: 900px) {
+  .rest-hero { padding: 3rem 1.5rem; min-height: auto; }
+  .rest-grid { grid-template-columns: 1fr; }
+}

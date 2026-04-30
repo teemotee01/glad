@@ -1,0 +1,30 @@
+.dc-panel { display: flex; flex-direction: column; gap: 1rem; }
+.dc-card { background: var(--glass); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem; }
+.dc-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(242,237,228,0.35); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 7px; }
+.dc-icon { font-size: 9px; color: var(--gold); width: 18px; height: 18px; background: rgba(200,169,110,0.12); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+.cat-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; }
+.cat-btn { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 9px 6px; font-size: 0.75rem; color: rgba(242,237,228,0.5); text-transform: capitalize; transition: all .18s; font-family: 'Syne', sans-serif; }
+.cat-btn:hover { border-color: var(--border); color: var(--ivory); }
+.cat-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(200,169,110,0.09); }
+
+.slider-row { margin-bottom: 11px; }
+.slider-top { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.slider-label { font-size: 0.66rem; color: rgba(242,237,228,0.38); text-transform: uppercase; letter-spacing: 0.07em; }
+.slider-val { font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: var(--gold); }
+.slider { width: 100%; accent-color: var(--gold); height: 3px; cursor: pointer; background: transparent; border: none; padding: 0; }
+
+.swatch-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 0.5rem; }
+.swatch { width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent; transition: all .2s; cursor: pointer; flex-shrink: 0; }
+.swatch:hover { transform: scale(1.1); }
+.swatch.active { border-color: var(--gold); box-shadow: 0 0 0 2px var(--obsidian), 0 0 0 4px var(--gold); transform: scale(1.15); }
+
+.texture-preview { position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.texture-preview img { width: 100%; height: 100px; object-fit: cover; display: block; }
+.texture-remove { position: absolute; top: 6px; right: 6px; }
+.dropzone { border: 1.5px dashed rgba(200,169,110,0.24); border-radius: 9px; padding: 1.2rem; text-align: center; cursor: pointer; transition: all .2s; }
+.dropzone:hover { border-color: var(--gold); background: rgba(200,169,110,0.04); }
+.dropzone-icon { font-size: 1.3rem; color: rgba(200,169,110,0.38); margin-bottom: 6px; }
+.dropzone-label { font-size: 0.78rem; color: rgba(242,237,228,0.42); margin-bottom: 3px; }
+.dropzone-sub { font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; color: rgba(242,237,228,0.22); letter-spacing: 0.08em; }
+.texture-tip { font-size: 0.68rem; color: rgba(242,237,228,0.22); margin-top: 0.6rem; font-style: italic; line-height: 1.4; }

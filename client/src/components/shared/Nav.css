@@ -1,0 +1,56 @@
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  height: 62px;
+  background: rgba(7,7,10,0.94);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2.5rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem; font-weight: 700; letter-spacing: 0.14em;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  flex-shrink: 0;
+}
+.nav-links { display: flex; gap: 4px; flex: 1; justify-content: center; }
+.nav-link {
+  padding: 7px 16px; border-radius: 7px;
+  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(242,237,228,0.42); border: 1px solid transparent;
+  transition: all .2s; display: flex; align-items: center; gap: 6px;
+}
+.nav-link:hover { color: var(--ivory); background: var(--glass2); }
+.nav-link.active { color: var(--gold); background: rgba(200,169,110,0.08); border-color: var(--border); }
+.cart-badge {
+  background: var(--crimson); color: #fff;
+  font-size: 0.58rem; font-weight: 700; padding: 2px 6px;
+  border-radius: 8px; min-width: 18px; text-align: center;
+}
+.nav-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.nav-user  { display: flex; align-items: center; gap: 8px; }
+.user-avatar {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: rgba(200,169,110,0.18); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem; font-weight: 600; color: var(--gold);
+}
+.user-email {
+  font-size: 0.72rem; color: rgba(242,237,228,0.38);
+  max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.nav-out { font-size: 0.74rem; padding: 6px 14px; }
+.nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 8px; }
+.nav-burger span { display: block; width: 22px; height: 2px; background: var(--ivory); border-radius: 1px; }
+@media (max-width: 768px) {
+  .nav { padding: 0 1.25rem; }
+  .nav-links {
+    display: none; position: absolute; top: 62px; left: 0; right: 0;
+    flex-direction: column; background: rgba(7,7,10,0.98);
+    padding: 1rem; border-bottom: 1px solid var(--border); gap: .5rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-right { display: none; }
+  .nav-burger { display: flex; }
+}

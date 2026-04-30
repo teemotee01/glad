@@ -1,0 +1,18 @@
+.ai-designer { background: var(--glass); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.ai-tabs { display: flex; border-bottom: 1px solid var(--border); }
+.ai-tab { flex: 1; padding: 11px; background: none; border: none; border-bottom: 2px solid transparent; color: rgba(242,237,228,0.38); font-size: 0.76rem; letter-spacing: 0.07em; transition: all .2s; font-family: 'Syne', sans-serif; cursor: pointer; }
+.ai-tab:hover { color: var(--ivory); }
+.ai-tab.active { color: var(--gold); border-bottom-color: var(--gold); background: rgba(200,169,110,0.04); }
+.ai-body { padding: 1.2rem; }
+.ai-textarea { width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px; font-size: 0.84rem; line-height: 1.5; resize: none; margin-bottom: 10px; }
+.ai-textarea:focus { border-color: rgba(200,169,110,0.4); }
+.ai-btn { width: 100%; justify-content: center; padding: 12px; font-size: 0.84rem; }
+.ai-desc { font-size: 0.8rem; color: rgba(242,237,228,0.4); line-height: 1.65; margin-bottom: 1rem; }
+.ai-result { margin-top: 0.8rem; background: rgba(0,200,150,0.04); border: 1px solid rgba(0,200,150,0.13); border-radius: 8px; padding: 1rem; max-height: 320px; overflow-y: auto; animation: fadeUp .3s ease; }
+.ai-section-head { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; color: var(--gold); margin: 0.75rem 0 0.25rem; }
+.ai-bullet { padding-left: 12px; font-size: 0.8rem; color: rgba(242,237,228,0.72); margin-bottom: 3px; }
+.ai-step { padding-left: 12px; font-size: 0.8rem; color: rgba(242,237,228,0.72); margin-bottom: 3px; }
+.ai-color-line { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.ai-color-dot { width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.12); flex-shrink: 0; }
+.ai-color-line span { font-size: 0.78rem; color: rgba(242,237,228,0.65); }
+.ai-line { font-size: 0.81rem; line-height: 1.62; color: rgba(242,237,228,0.72); margin-bottom: 2px; }
